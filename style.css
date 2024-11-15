@@ -1,0 +1,35 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; 
+    padding: 16px;
+    width: 100%;
+  }
+  
+  .img-cats {
+    width: 100%;
+    object-fit: cover; 
+    border-radius: 12px; 
+  }
+  
+  /* Responsividad */
+
+  @media (max-width: 599px) {
+    .img-cats {
+      max-width: 100%; 
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 839px) {
+    .img-cats {
+      max-width: calc(50% - 8px); 
+    }
+  }
+  
+  @media (min-width: 840px) {
+    .img-cats {
+      max-width: calc(33.33% - 8px);
+      max-width: 300px;
+    }
+  }
+  
